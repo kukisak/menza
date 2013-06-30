@@ -10,7 +10,7 @@ Luxury Menza is J2EE project which implements application for managing student's
 We implemented this semestral project into MDW - Middleware and Web services subject. System is capable of following 
 activities based on user roles:
 
-* User role: Boarder - student, professor or university friend who like eating in menza
+* User role: Boarder - student, professor or university friend who likes eat in menza
   * Activities:
      * Edit boarder account - update his personal identifications and bank accounts
      * Order menucard - list available menucards and order selected food with specified date and number of portion
@@ -41,7 +41,7 @@ activities based on user roles:
   * Activities:
      * not implemented
         
-* User role: All - any internet user with or withour menza account, he is able to consume web services 
+* User role: All - any internet user with or without menza account, he is able to consume web services 
                      from neighbour sites
   * Activities:
      * Identity checking - display user identification and his assigned roles
