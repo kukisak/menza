@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" 
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+    <context-param>
+        <param-name>resteasy.servlet.mapping.prefix</param-name>
+        <param-value>/restws</param-value>
+    </context-param>
+    <context-param>
+        <param-name>resteasy.scan</param-name>
+        <param-value>true</param-value>
+    </context-param>
+    <listener>
+        <listener-class>org.jboss.resteasy.plugins.server.servlet.ResteasyBootstrap</listener-class>
+    </listener>
+
+    <servlet>
+        <servlet-name>Resteasy</servlet-name>
+        <servlet-class>org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Resteasy</servlet-name>
+        <url-pattern>/restws/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>MenzaUserEditServlet</servlet-name>
+        <servlet-class>menza.servlets.MenzaUserEditServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MenzaUserEditServlet</servlet-name>
+        <url-pattern>/MenzaUserEdit</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>editMenucard</servlet-name>
+        <servlet-class>menza.servlets.EditMenucardServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>editMenucard</servlet-name>
+        <url-pattern>/editMenucard</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>orderMenucard</servlet-name>
+        <servlet-class>menza.servlets.OrderMenucardServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>orderMenucard</servlet-name>
+        <url-pattern>/orderMenucard</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>editReservation</servlet-name>
+        <servlet-class>menza.servlets.EditReservationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>editReservation</servlet-name>
+        <url-pattern>/editReservation</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>orderReservation</servlet-name>
+        <servlet-class>menza.servlets.OrderReservationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>orderReservation</servlet-name>
+        <url-pattern>/orderReservation</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>BoarderManagerEdit</servlet-name>
+        <servlet-class>menza.servlets.BoarderManagerEditServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BoarderManagerEdit</servlet-name>
+        <url-pattern>/BoarderManagerEdit</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>BoarderEdit</servlet-name>
+        <servlet-class>menza.servlets.BoarderEditServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BoarderEdit</servlet-name>
+        <url-pattern>/BoarderEdit</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>AccountEdit</servlet-name>
+        <servlet-class>menza.servlets.AccountEditServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AccountEdit</servlet-name>
+        <url-pattern>/AccountEdit</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+	  	<servlet-name>spravujSklad</servlet-name>
+	  	<servlet-class>sklad.servlets.Sklad</servlet-class>
+ 	</servlet>
+ 	<servlet-mapping>
+	  	<servlet-name>spravujSklad</servlet-name>
+		<url-pattern>/spravujSklad</url-pattern>
+	</servlet-mapping>	 
+	
+	<servlet>
+  		<servlet-name>spravujRestaurant</servlet-name>
+  		<servlet-class>restaurant.servlets.Restaurant</servlet-class>
+ 	</servlet>
+	<servlet-mapping>
+		<servlet-name>spravujRestaurant</servlet-name>
+		<url-pattern>/spravujRestaurant</url-pattern>
+ 	</servlet-mapping> 
+    
+    <session-config>
+        <session-timeout>
+            360
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>

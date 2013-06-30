@@ -1,0 +1,84 @@
+body {
+    /*font-family: Verdana, Helvetica, sans-serif;
+    background-color: #FFFFCC;*/
+    background-color: #FFF;  /* white*/
+    font:80% "Trebuchet MS"; /* Change this % to alter the size of the whole page */
+    color:#333;
+    width:100%;
+}
+
+h1 {	
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+#page {
+    width: 1000px;
+    background-color: #FFFFCC;
+    margin:0 auto;
+}
+
+#header {
+    width: 100%;
+    background-color: #C0C0C0;
+    padding-top: 5px;
+    height: 25px;
+}
+
+#header ul li {
+    display: inline;
+    /*padding-right: 5px;*/
+}
+
+#logo {
+    /*display: none*/
+}
+
+#main {
+    width: 100%;
+    background: #FFFFCC;
+}
+
+#content {
+    width:800px;
+    float:left;
+    /*background-color: #FFFFCC;*/
+}
+
+#side {
+    width:200px;
+    float:right;
+    background-color: #FFFFCC;
+    text-align: center;
+}
+
+#side li{
+    text-align: left;
+}
+
+.list {
+    border: 1px solid black;
+}
+
+.result td, .result th{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+/*---------  left and right div on 50% of all width  ---------*/
+.right {
+  margin-top:0px;
+  float:right;
+  width:50%;
+  text-align:right;
+}
+
+.left {
+  margin-top:0px;
+  float:left;
+  width:50%;
+  text-align:left;
+}
